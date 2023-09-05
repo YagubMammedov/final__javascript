@@ -1,0 +1,69 @@
+.right__global{
+    background-color: black;
+    color: white;
+    height: 100%;
+    .topmovies{
+        display: flex;
+        justify-content: space-between;
+        padding: 24px;
+
+        &__img{
+            width: 112px;
+            height: 137px;
+            img{
+                width: 100%;
+            }
+        }
+        &__list{
+            li{
+                padding: 8px 0;
+            }
+            li:first-child{
+                border: 1px solid #29282F;
+                border-radius: 8px;
+                width: 60px;
+                p{
+                    padding: 2px 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            li:nth-of-type(odd){
+                display: flex;
+                justify-content: flex-start;
+                gap: 10px;
+                align-items: center;
+            }
+            li:last-child{
+                display: flex;
+                justify-content: flex-start;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+       
+    }
+    .topmovies:nth-child(4) ~ .topmovies{
+        display: none;
+    }
+    button{
+        display: flex;
+        width: 274px;
+        padding: 12px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 24px;
+        border: 1px solid  #B43FEB;
+        cursor: pointer;
+        background-color: #000;
+        color: #B43FEB;
+    }
+
+    button:hover{
+        background-color: #fff;
+    }
+
+}
+

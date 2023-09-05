@@ -1,0 +1,22 @@
+.global{
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 0.4fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . .";      
+}
+
+#preloader{
+  background: #fff;
+  background-image: url(../../images/load.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+}

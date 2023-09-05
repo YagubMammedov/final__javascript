@@ -1,0 +1,109 @@
+.login{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        justify-content: center;
+        gap: 0px 0px; 
+        grid-template-areas: 
+        ". .";  
+        
+        &__main{
+
+        }
+
+        &__right{
+            background-color: #000;
+            color: #fff;
+            h4{
+                text-align: center;
+                padding-top: 28px;
+                padding-bottom: 28px;
+            }
+            h2{
+                text-align: center;
+                padding-bottom: 32px;
+                font-size: 32px;
+                font-family: Inter;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 40px; /* 125% */
+                letter-spacing: 0.16px;
+            }
+           
+            &__media{
+                    width: 501px;
+                    padding: 12px 119px;
+                    border-radius: 20px;
+                    background-color: #29282F;
+                    margin: 15px auto;
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 16px;
+                        color: #fff;
+                    }        
+            }
+
+            input{
+                display: flex;
+                width: 501px;
+                padding: 14px 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                background-color: #29282F;
+                margin: 15px auto;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+            }
+
+            button{
+                padding: 16px 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                width: 501px;
+                border-radius: 24px;
+                background-color: #B43FEB;
+                border: none;
+                color: white;
+                margin: 0 auto;
+            }
+
+            form{
+                
+                h3{
+                    text-align: center;
+                    padding: 16px 0;
+                }
+              
+            }
+            &__name{
+                padding-left: 90px;
+            }
+            &__surname{
+                padding-left: 90px;
+            }
+            &__paswword{
+                
+                margin: 0 auto;
+                padding: 20px 0 20px 470px;
+                a{
+                    text-decoration: none;
+                }
+            }
+            
+            &__register{
+                text-align: center;
+                padding: 24px 0;
+            }
+        }
+}
